@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="{{ url('public/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('public/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="public/css/splide.min.css">
 	<link rel="stylesheet" href="public/css/slimselect.css">
 	<link rel="stylesheet" href="public/css/plyr.css">
