@@ -14,8 +14,8 @@
 	<link rel="stylesheet" href="{{ asset('public/css/main.css') }}">
 
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
-	<link rel="apple-touch-icon" href="{{ asset('icon/favicon-32x32.png') }}">
+	<link rel="icon" type="image/png" href="{{ asset('public/icon/favicon-32x32.png') }}" sizes="32x32">
+	<link rel="apple-touch-icon" href="{{ asset('public/icon/favicon-32x32.png') }}">
 
 	<meta name="description" content="{{ $meta->description }}">
 	<meta name="keywords" content="{{ $meta->keywords }}">
@@ -62,6 +62,10 @@
 								</ul>
 							</li>
 							<!-- end dropdown -->
+
+							<li class="header__nav-item">
+								<a href="about" class="header__nav-link">About</a>
+							</li>
 
 							<li class="header__nav-item">
 								<a href="contact" class="header__nav-link">Contact</a>
@@ -143,6 +147,10 @@
 				</ul>
 			</li>
 			<!-- end dropdown -->
+
+			<li class="menu__nav-item">
+				<a href="about" class="menu__nav-link">About</a>
+			</li>
 
 			<li class="menu__nav-item">
 				<a href="contact" class="menu__nav-link">Contact</a>
