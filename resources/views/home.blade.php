@@ -6,21 +6,21 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="{{ asset('public/css/bootstrap.min.css') }}">
-	<link rel="stylesheet" href="public/css/splide.min.css">
-	<link rel="stylesheet" href="public/css/slimselect.css">
-	<link rel="stylesheet" href="public/css/plyr.css">
-	<link rel="stylesheet" href="public/css/photoswipe.css">
-	<link rel="stylesheet" href="public/css/default-skin.css">
-	<link rel="stylesheet" href="public/css/main.css">
+	<link rel="stylesheet" href="{{ asset('public/css/splide.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('public/css/slimselect.css') }}">
+	<link rel="stylesheet" href="{{ asset('public/css/plyr.css') }}">
+	<link rel="stylesheet" href="{{ asset('public/css/photoswipe.css') }}">
+	<link rel="stylesheet" href="{{ asset('public/css/default-skin.css') }}">
+	<link rel="stylesheet" href="{{ asset('public/css/main.css') }}">
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
-	<link rel="apple-touch-icon" href="icon/favicon-32x32.png">
+	<link rel="apple-touch-icon" href="{{ asset('icon/favicon-32x32.png') }}">
 
-	<meta name="description" content="Online Movies, TV Shows & Cinema HTML Template">
-	<meta name="keywords" content="">
-	<meta name="author" content="Dmitry Volkov">
-	<title>FlixGo – Online Movies, TV Shows & Cinema HTML Template</title>
+	<meta name="description" content="{{ $meta->description }}">
+	<meta name="keywords" content="{{ $meta->keywords }}">
+	<meta name="author" content="{{ $meta->author }}">
+	<title>{{ $meta->title }}</title>
 </head>
 <body>
 	<!-- header -->
@@ -30,94 +30,43 @@
 				<div class="col-12">
 					<div class="header__content">
 						<!-- header logo -->
-						<a href="index-2.html" class="header__logo">
-							<img src="public/img/logo.svg" alt="">
+						<a href="" class="header__logo">
+							<img src="{{ asset('public/img/logo.svg') }}" alt="">
 						</a>
 						<!-- end header logo -->
-
-						<!-- header categories -->
-						<div class="header__categories">
-							<button class="header__categories-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								<span></span>
-								<span></span>
-							</button>
-
-							<div class="dropdown-menu header__dropdown-menu header__dropdown-menu--categories">
-								<ul class="header__categories-list">
-									<li><a href="catalog1.html">Films</a></li>
-									<li><a href="catalog2.html">TV Series</a></li>
-									<li><a href="catalog1.html">Anime</a></li>
-									<li><a href="catalog2.html">Cartoons</a></li>
-								</ul>
-								<ul class="header__categories-list">
-									<li><a href="catalog1.html">Catalog Grid</a></li>
-									<li><a href="catalog2.html">Catalog List</a></li>
-									<li><a href="details1.html">Details Film</a></li>
-									<li><a href="details2.html">Details TV Series</a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- end header categories -->
 
 						<!-- header nav -->
 						<ul class="header__nav">
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/></svg></a>
-
-								<ul class="dropdown-menu header__dropdown-menu">
-									<li><a href="index-2.html">Home style 1</a></li>
-									<li><a href="index2.html">Home style 2</a></li>
-								</ul>
+								<a class="header__nav-link" href="{{ route('home') }}">Home</a>
 							</li>
 							<!-- end dropdown -->
 
 							<!-- dropdown -->
 							<li class="header__nav-item">
-								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/></svg></a>
-
+								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Genre
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/>
+                                    </svg>
+                                </a>
 								<ul class="dropdown-menu header__dropdown-menu">
-									<li><a href="catalog1.html">Catalog Grid</a></li>
-									<li><a href="catalog2.html">Catalog List</a></li>
-									<li><a href="details1.html">Details Movie</a></li>
-									<li><a href="details2.html">Details TV Series</a></li>
+                                    @foreach ($genres as $genre)
+									<li>
+                                        <a href="{{ $genre->slug }}">
+                                            {{ $genre->g_name }}
+                                        </a>
+                                    </li>
+                                    @endforeach
 								</ul>
 							</li>
 							<!-- end dropdown -->
 
 							<li class="header__nav-item">
-								<a href="pricing.html" class="header__nav-link">Pricing plans</a>
+								<a href="contact" class="header__nav-link">Contact</a>
 							</li>
 
-							<!-- dropdown -->
-							<li class="header__nav-item">
-								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/></svg></a>
-
-								<ul class="dropdown-menu header__dropdown-menu">
-									<li><a href="about.html">About us</a></li>
-									<li><a href="faq.html">Help center</a></li>
-									<li><a href="profile.html">Profile</a></li>
-									<li><a href="actor.html">Actor</a></li>
-									<li><a href="contacts.html">Contacts</a></li>
-									<li><a href="privacy.html">Privacy policy</a></li>
-								</ul>
-							</li>
-							<!-- end dropdown -->
-
-							<!-- dropdown -->
-							<li class="header__nav-item">
-								<a class="header__nav-link header__nav-link--more" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z"/></svg>
-								</a>
-
-								<ul class="dropdown-menu header__dropdown-menu">
-									<li><a href="signin.html">Sign In</a></li>
-									<li><a href="signup.html">Sign Up</a></li>
-									<li><a href="forgot.html">Forgot password</a></li>
-									<li><a href="404.html">404 Page</a></li>
-								</ul>
-							</li>
-							<!-- end dropdown -->
 						</ul>
 						<!-- end header nav -->
 
@@ -125,21 +74,17 @@
 						<div class="header__actions">
 							<form action="#" class="header__search">
 								<input type="text" placeholder="Search">
-								<button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg></button>
+								<button type="button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path>
+                                    </svg>
+                                </button>
 							</form>
 
-							<div class="header__language">
-								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">EN <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/></svg></a>
-
-								<ul class="dropdown-menu header__dropdown-menu header__dropdown-menu--lang">
-									<li><a href="#">English</a></li>
-									<li><a href="#">Spanish</a></li>
-									<li><a href="#">French</a></li>
-								</ul>
-							</div>
-
-							<a href="signin.html" class="header__sign-in">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,12a1,1,0,0,0-1-1H11.41l2.3-2.29a1,1,0,1,0-1.42-1.42l-4,4a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L11.41,13H19A1,1,0,0,0,20,12ZM17,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V16a1,1,0,0,0-2,0v3a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4H17a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,17,2Z"/></svg>
+							<a href="signin" class="header__sign-in">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M20,12a1,1,0,0,0-1-1H11.41l2.3-2.29a1,1,0,1,0-1.42-1.42l-4,4a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l4,4a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L11.41,13H19A1,1,0,0,0,20,12ZM17,2H7A3,3,0,0,0,4,5V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V16a1,1,0,0,0-2,0v3a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V5A1,1,0,0,1,7,4H17a1,1,0,0,1,1,1V8a1,1,0,0,0,2,0V5A3,3,0,0,0,17,2Z"/>
+                                </svg>
 								<span>sign in</span>
 							</a>
 						</div>
@@ -164,7 +109,11 @@
 		<!-- menu search -->
 		<form action="#" class="menu__search">
 			<input type="text" placeholder="Search">
-			<button type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path></svg></button>
+			<button type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M21.71,20.29,18,16.61A9,9,0,1,0,16.61,18l3.68,3.68a1,1,0,0,0,1.42,0A1,1,0,0,0,21.71,20.29ZM11,18a7,7,0,1,1,7-7A7,7,0,0,1,11,18Z"></path>
+                </svg>
+            </button>
 		</form>
 		<!-- end menu search -->
 
@@ -172,46 +121,32 @@
 		<ul class="menu__nav">
 			<!-- dropdown -->
 			<li class="menu__nav-item">
-				<a class="menu__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/></svg></a>
-
-				<ul class="dropdown-menu menu__dropdown-menu">
-					<li><a href="index-2.html">Home style 1</a></li>
-					<li><a href="index2.html">Home style 2</a></li>
-				</ul>
+				<a class="menu__nav-link" href="#">Home</a>
 			</li>
 			<!-- end dropdown -->
 
 			<!-- dropdown -->
 			<li class="menu__nav-item">
-				<a class="menu__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Catalog <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/></svg></a>
 
+				<a class="menu__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Genre
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/>
+                    </svg>
+                </a>
 				<ul class="dropdown-menu menu__dropdown-menu">
-					<li><a href="catalog1.html">Catalog Grid</a></li>
-					<li><a href="catalog2.html">Catalog List</a></li>
-					<li><a href="details1.html">Details Movie</a></li>
-					<li><a href="details2.html">Details TV Series</a></li>
+                    @foreach ($genres as $genre)
+                    <li class="menu__nav-item">
+                        <a class="menu__nav-link" href="{{ $genre->slug }}">{{ $genre->g_name }}</a>
+                    </li>
+                    @endforeach
 				</ul>
 			</li>
 			<!-- end dropdown -->
 
 			<li class="menu__nav-item">
-				<a href="pricing.html" class="menu__nav-link">Pricing plans</a>
+				<a href="contact" class="menu__nav-link">Contact</a>
 			</li>
-
-			<!-- dropdown -->
-			<li class="menu__nav-item">
-				<a class="menu__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z"/></svg></a>
-
-				<ul class="dropdown-menu menu__dropdown-menu">
-					<li><a href="about.html">About us</a></li>
-					<li><a href="faq.html">Help center</a></li>
-					<li><a href="profile.html">Profile</a></li>
-					<li><a href="actor.html">Actor</a></li>
-					<li><a href="contacts.html">Contacts</a></li>
-					<li><a href="privacy.html">Privacy policy</a></li>
-				</ul>
-			</li>
-			<!-- end dropdown -->
 
 			<!-- dropdown -->
 			<li class="menu__nav-item">
@@ -1472,119 +1407,6 @@
 	</section>
 	<!-- end now watching -->
 
-	<!-- pricing plans -->
-	<section class="section">
-		<div class="container">
-			<div class="row">
-				<!-- section title -->
-				<div class="col-12">
-					<h2 class="section__title">Select Your Plan</h2>
-				</div>
-				<!-- end section title -->
-			</div>
-
-			<div class="row">
-				<!-- price -->
-				<div class="col-12 col-md-6 col-lg-4 order-md-2 order-lg-1">
-					<div class="plan">
-						<h3 class="plan__title">Starter</h3>
-						<span class="plan__price">Free</span>
-						<ul class="plan__list">
-							<li>7 days</li>
-							<li>720p Resolution</li>
-							<li>Limited Availability</li>
-							<li>Desktop Only</li>
-							<li>Limited Support</li>
-						</ul>
-						<a href="signin.html" class="plan__btn"><span>Register</span></a>
-					</div>
-				</div>
-				<!-- end price -->
-
-				<!-- price -->
-				<div class="col-12 col-lg-4 order-md-1 order-lg-2">
-					<div class="plan plan--premium">
-						<h3 class="plan__title">Premium</h3>
-						<span class="plan__price">$19.99</span>
-						<ul class="plan__list">
-							<li>1 Month</li>
-							<li>Full HD</li>
-							<li>Lifetime Availability</li>
-							<li>TV & Desktop</li>
-							<li>24/7 Support</li>
-						</ul>
-						<button type="button" data-bs-toggle="modal" class="plan__btn" data-bs-target="#plan-modal"><span>Choose plan</span></button>
-					</div>
-				</div>
-				<!-- end price -->
-
-				<!-- price -->
-				<div class="col-12 col-md-6 col-lg-4 order-md-3 order-lg-3">
-					<div class="plan">
-						<h3 class="plan__title">Cinematic</h3>
-						<span class="plan__price">$39.99</span>
-						<ul class="plan__list">
-							<li>2 Months</li>
-							<li>Ultra HD</li>
-							<li>Lifetime Availability</li>
-							<li>Any Device</li>
-							<li>24/7 Support</li>
-						</ul>
-						<button type="button" data-bs-toggle="modal" class="plan__btn" data-bs-target="#plan-modal"><span>Choose plan</span></button>
-					</div>
-				</div>
-				<!-- end price -->
-			</div>
-		</div>
-	</section>
-	<!-- end pricing plans -->
-
-	<!-- partners -->
-	<section class="section section--bt">
-		<div class="container">
-			<div class="row">
-				<!-- section title -->
-				<div class="col-12 col-xl-10">
-					<h2 class="section__title">Our Partners</h2>
-
-					<p class="section__text">We strive for long-term cooperation with our partners, and our team is always ready to meet and consider new opportunities for mutual benefits. If you would like to become our partner, we are always open to new offers and look forward to hearing from you. <a href="contacts.html">Become a partner</a></p>
-				</div>
-				<!-- end section text -->
-			</div>
-
-			<div class="row">
-				<div class="col-12">
-					<div class="partners">
-						<a href="#" class="partners__item">
-							<img src="public/img/partners/themeforest-light-background.png" alt="">
-						</a>
-
-						<a href="#" class="partners__item">
-							<img src="public/img/partners/audiojungle-light-background.png" alt="">
-						</a>
-
-						<a href="#" class="partners__item">
-							<img src="public/img/partners/codecanyon-light-background.png" alt="">
-						</a>
-
-						<a href="#" class="partners__item">
-							<img src="public/img/partners/photodune-light-background.png" alt="">
-						</a>
-
-						<a href="#" class="partners__item partners__item--prelast">
-							<img src="public/img/partners/activeden-light-background.png" alt="">
-						</a>
-
-						<a href="#" class="partners__item partners__item--last">
-							<img src="public/img/partners/3docean-light-background.png" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end partners -->
-
 	<!-- footer -->
 	<footer class="footer">
 		<div class="container">
@@ -1593,7 +1415,11 @@
 					<div class="footer__logo">
 						<img src="public/img/logo.svg" alt="">
 					</div>
-					<p class="footer__tagline">Movies & TV Shows, Online cinema,<br> Movie database HTML Template. <br>The perfect choice for your project.</p>
+					<p class="footer__tagline">
+                        Movies & TV Shows, Online cinema,<br>
+                        Movie database HTML Template. <br>
+                        The perfect choice for your project.
+                    </p>
 
 					<ul class="footer__social">
 						<li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z"></path></svg></a></li>
@@ -1730,13 +1556,13 @@
 	<!-- end plan modal -->
 
 	<!-- JS -->
-	<script src="public/js/bootstrap.bundle.min.js"></script>
-	<script src="public/js/splide.min.js"></script>
-	<script src="public/js/smooth-scrollbar.js"></script>
-	<script src="public/js/slimselect.min.js"></script>
-	<script src="public/js/plyr.min.js"></script>
-	<script src="public/js/photoswipe.min.js"></script>
-	<script src="public/js/photoswipe-ui-default.min.js"></script>
-	<script src="public/js/main.js"></script>
+	<script src="{{ asset('public/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ asset('public/js/splide.min.js') }}"></script>
+	<script src="{{ asset('public/js/smooth-scrollbar.js') }}"></script>
+	<script src="{{ asset('public/js/slimselect.min.js') }}"></script>
+	<script src="{{ asset('public/js/plyr.min.js') }}"></script>
+	<script src="{{ asset('public/js/photoswipe.min.js') }}"></script>
+	<script src="{{ asset('public/js/photoswipe-ui-default.min.js') }}"></script>
+	<script src="{{ asset('public/js/main.js') }}"></script>
 </body>
 </html>
