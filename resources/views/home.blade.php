@@ -43,6 +43,10 @@
 							</li>
 							<!-- end dropdown -->
 
+							<li class="header__nav-item">
+								<a href="movies" class="header__nav-link">All Movie</a>
+							</li>
+
 							<!-- dropdown -->
 							<li class="header__nav-item">
 								<a class="header__nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -129,6 +133,10 @@
 			</li>
 			<!-- end dropdown -->
 
+            <li class="menu__nav-item">
+				<a href="movies" class="menu__nav-link">All movie</a>
+			</li>
+
 			<!-- dropdown -->
 			<li class="menu__nav-item">
 
@@ -163,10 +171,10 @@
 				</a>
 
 				<ul class="dropdown-menu menu__dropdown-menu">
-					<li><a href="signin.html">Sign In</a></li>
-					<li><a href="signup.html">Sign Up</a></li>
-					<li><a href="forgot.html">Forgot password</a></li>
-					<li><a href="404.html">404 Page</a></li>
+					<li><a href="signin">Sign In</a></li>
+					<li><a href="signup">Sign Up</a></li>
+					<li><a href="forgot">Forgot password</a></li>
+					<li><a href="404">404 Page</a></li>
 				</ul>
 			</li>
 			<!-- end dropdown -->
@@ -182,14 +190,22 @@
 				<div class="col-12">
 					<div class="hero splide splide--hero">
 						<div class="splide__arrows">
-							<button class="splide__arrow splide__arrow--prev" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z"/></svg></button>
-							<button class="splide__arrow splide__arrow--next" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"/></svg></button>
+							<button class="splide__arrow splide__arrow--prev" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z"/>
+                                </svg>
+                            </button>
+							<button class="splide__arrow splide__arrow--next" type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"/>
+                                </svg>
+                            </button>
 						</div>
 
 						<div class="splide__track">
 							<ul class="splide__list">
 								<li class="splide__slide">
-									<div class="hero__slide" data-bg="public/img/bg/slide__bg-1.jpg">
+									<div class="hero__slide" data-bg="{{ asset('public/img/bg/slide__bg-1.jpg') }}">
 										<div class="hero__content">
 											<h2 class="hero__title">Savage Beauty <sub>9.8</sub></h2>
 											<p class="hero__text">A brilliant scientist discovers a way to harness the power of the ocean's currents to create a new, renewable energy source. But when her groundbreaking technology falls into the wrong hands, she must race against time to stop it from being used for evil.</p>
@@ -199,7 +215,7 @@
 												<a href="#">Comedy</a>
 											</p>
 											<div class="hero__actions">
-												<a href="details.html" class="hero__btn">
+												<a href="details" class="hero__btn">
 													<span>Watch now</span>
 												</a>
 											</div>
@@ -216,7 +232,7 @@
 												<a href="#">Triler</a>
 											</p>
 											<div class="hero__actions">
-												<a href="details.html" class="hero__btn">
+												<a href="details" class="hero__btn">
 													<span>Watch now</span>
 												</a>
 											</div>
@@ -234,7 +250,7 @@
 												<a href="#">Triler</a>
 											</p>
 											<div class="hero__actions">
-												<a href="details.html" class="hero__btn">
+												<a href="details" class="hero__btn">
 													<span>Watch now</span>
 												</a>
 											</div>
@@ -292,7 +308,7 @@
 						<!-- item -->
 						<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
 							<div class="item item--list">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/1.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
@@ -300,7 +316,9 @@
 								</a>
 
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Lost City</a></h3>
+									<h3 class="item__title">
+                                        <a href="details1">The Lost City</a>
+                                    </h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -326,7 +344,7 @@
 						<!-- item -->
 						<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
 							<div class="item item--list">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/2.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
@@ -334,7 +352,7 @@
 								</a>
 
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Undercurrents</a></h3>
+									<h3 class="item__title"><a href="details1">Undercurrents</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -359,7 +377,7 @@
 						<!-- item -->
 						<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
 							<div class="item item--list">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/3.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
@@ -367,7 +385,7 @@
 								</a>
 
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Redemption Road</a></h3>
+									<h3 class="item__title"><a href="details1">Redemption Road</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -394,7 +412,7 @@
 						<!-- item -->
 						<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
 							<div class="item item--list">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/4.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
@@ -402,7 +420,7 @@
 								</a>
 
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Tales from the Underworld</a></h3>
+									<h3 class="item__title"><a href="details1">Tales from the Underworld</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -428,7 +446,7 @@
 						<!-- item -->
 						<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
 							<div class="item item--list">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/5.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
@@ -436,7 +454,7 @@
 								</a>
 
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Voices from the Other Side</a></h3>
+									<h3 class="item__title"><a href="details1">Voices from the Other Side</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -462,7 +480,7 @@
 						<!-- item -->
 						<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
 							<div class="item item--list">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/6.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
@@ -470,7 +488,7 @@
 								</a>
 
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Unseen World</a></h3>
+									<h3 class="item__title"><a href="details1">The Unseen World</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -499,14 +517,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/7.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Lost Key</a></h3>
+									<h3 class="item__title"><a href="details1">The Lost Key</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -520,14 +538,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/8.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Red Sky at Night</a></h3>
+									<h3 class="item__title"><a href="details1">Red Sky at Night</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -540,14 +558,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/9.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Forgotten Road</a></h3>
+									<h3 class="item__title"><a href="details1">The Forgotten Road</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -562,14 +580,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/10.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Dark Horizons</a></h3>
+									<h3 class="item__title"><a href="details1">Dark Horizons</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -583,14 +601,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/11.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Echoes of Yesterday</a></h3>
+									<h3 class="item__title"><a href="details1">Echoes of Yesterday</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -604,14 +622,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/12.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Into the Unknown</a></h3>
+									<h3 class="item__title"><a href="details1">Into the Unknown</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -624,14 +642,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/13.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Broken Path</a></h3>
+									<h3 class="item__title"><a href="details1">The Broken Path</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -646,14 +664,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/14.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">A Light in the Darkness</a></h3>
+									<h3 class="item__title"><a href="details1">A Light in the Darkness</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -667,14 +685,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/15.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Endless Horizon</a></h3>
+									<h3 class="item__title"><a href="details1">Endless Horizon</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -688,14 +706,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/16.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Unseen Journey</a></h3>
+									<h3 class="item__title"><a href="details1">The Unseen Journey</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -708,14 +726,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/17.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Reckoning</a></h3>
+									<h3 class="item__title"><a href="details1">Reckoning</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -730,14 +748,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/18.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Savage Beauty</a></h3>
+									<h3 class="item__title"><a href="details1">Savage Beauty</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -755,14 +773,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/1.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Midnight Sun</a></h3>
+									<h3 class="item__title"><a href="details1">Midnight Sun</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -775,14 +793,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/2.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Shadow Hunter</a></h3>
+									<h3 class="item__title"><a href="details1">The Shadow Hunter</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -797,14 +815,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/3.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Wild Hearts</a></h3>
+									<h3 class="item__title"><a href="details1">Wild Hearts</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -818,14 +836,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/4.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Dark Horizons</a></h3>
+									<h3 class="item__title"><a href="details1">Dark Horizons</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -839,14 +857,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/5.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Electric Dreams</a></h3>
+									<h3 class="item__title"><a href="details1">Electric Dreams</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -859,14 +877,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/6.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Broken Promises</a></h3>
+									<h3 class="item__title"><a href="details1">Broken Promises</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -880,14 +898,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/7.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Fierce Grace</a></h3>
+									<h3 class="item__title"><a href="details1">Fierce Grace</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -901,14 +919,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/8.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Burning Bridges</a></h3>
+									<h3 class="item__title"><a href="details1">Burning Bridges</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -923,14 +941,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/9.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Forbidden Love</a></h3>
+									<h3 class="item__title"><a href="details1">Forbidden Love</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -944,14 +962,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/10.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Timekeeper's Daughter</a></h3>
+									<h3 class="item__title"><a href="details1">The Timekeeper's Daughter</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -965,14 +983,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/11.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">The Enchanted Forest</a></h3>
+									<h3 class="item__title"><a href="details1">The Enchanted Forest</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -985,14 +1003,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/12.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Relentless</a></h3>
+									<h3 class="item__title"><a href="details1">Relentless</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -1011,14 +1029,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/13.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Starlight Chronicles</a></h3>
+									<h3 class="item__title"><a href="details1">Starlight Chronicles</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -1033,14 +1051,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/14.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Rising Sun Academy</a></h3>
+									<h3 class="item__title"><a href="details1">Rising Sun Academy</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -1054,14 +1072,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/15.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Eternal Bonds</a></h3>
+									<h3 class="item__title"><a href="details1">Eternal Bonds</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -1075,14 +1093,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/16.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Chronicles of the Elements</a></h3>
+									<h3 class="item__title"><a href="details1">Chronicles of the Elements</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -1095,14 +1113,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/17.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Fantasia Journey</a></h3>
+									<h3 class="item__title"><a href="details1">Fantasia Journey</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -1116,14 +1134,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/18.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Phoenix's Destiny</a></h3>
+									<h3 class="item__title"><a href="details1">Phoenix's Destiny</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -1136,14 +1154,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/1.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Guardians of the Lost City</a></h3>
+									<h3 class="item__title"><a href="details1">Guardians of the Lost City</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -1158,14 +1176,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/2.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Divine Intervention</a></h3>
+									<h3 class="item__title"><a href="details1">Divine Intervention</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -1179,14 +1197,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/3.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Infinite Horizon</a></h3>
+									<h3 class="item__title"><a href="details1">Infinite Horizon</a></h3>
 									<span class="item__category">
 										<a href="#">Romance</a>
 										<a href="#">Drama</a>
@@ -1201,14 +1219,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/4.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Beyond the Stars</a></h3>
+									<h3 class="item__title"><a href="details1">Beyond the Stars</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 										<a href="#">Drama</a>
@@ -1222,14 +1240,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/5.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Shadows of the Past</a></h3>
+									<h3 class="item__title"><a href="details1">Shadows of the Past</a></h3>
 									<span class="item__category">
 										<a href="#">Action</a>
 										<a href="#">Triler</a>
@@ -1243,14 +1261,14 @@
 						<!-- item -->
 						<div class="col-6 col-sm-4 col-lg-3 col-xl-2">
 							<div class="item">
-								<a href="details1.html" class="item__cover">
+								<a href="details1" class="item__cover">
 									<img src="public/img/covers/6.png" alt="">
 									<span class="item__play">
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
 									</span>
 								</a>
 								<div class="item__content">
-									<h3 class="item__title"><a href="details1.html">Wings of Freedom</a></h3>
+									<h3 class="item__title"><a href="details1">Wings of Freedom</a></h3>
 									<span class="item__category">
 										<a href="#">Comedy</a>
 									</span>
@@ -1266,154 +1284,14 @@
 
 			<div class="row">
 				<div class="col-12">
-					<a href="catalog1.html" class="section__btn"><span>to catalog</span></a>
+					<a href="movies" class="section__btn">
+                        <span>See All</span>
+                    </a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- end content -->
-
-	<!-- now watching -->
-	<section class="section section--dark">
-		<div class="container">
-			<div class="row">
-				<!-- section title -->
-				<div class="col-12">
-					<h2 class="section__title section__title--carousel">Now Watching</h2>
-				</div>
-				<!-- end section title -->
-
-				<!-- carousel -->
-				<div class="col-12">
-					<div class="section__carousel splide splide--content">
-						<div class="splide__arrows">
-							<button class="splide__arrow splide__arrow--prev" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z"/></svg></button>
-							<button class="splide__arrow splide__arrow--next" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"/></svg></button>
-						</div>
-
-						<div class="splide__track">
-							<ul class="splide__list">
-								<li class="splide__slide">
-									<div class="item item--carousel">
-										<a href="details1.html" class="item__cover">
-											<img src="public/img/covers/7.png" alt="">
-											<span class="item__play">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-											</span>
-										</a>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details1.html">I Dream in Another Language</a></h3>
-											<span class="item__category">
-												<a href="#">Action</a>
-												<a href="#">Triler</a>
-											</span>
-											<span class="item__rate">8.4</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--carousel">
-										<a href="details1.html" class="item__cover">
-											<img src="public/img/covers/8.png" alt="">
-											<span class="item__play">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-											</span>
-										</a>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details1.html">Undercurrents</a></h3>
-											<span class="item__category">
-												<a href="#">Comedy</a>
-											</span>
-											<span class="item__rate">7.1</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--carousel">
-										<a href="details1.html" class="item__cover">
-											<img src="public/img/covers/9.png" alt="">
-											<span class="item__play">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-											</span>
-										</a>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details1.html">Tales from the Underworld</a></h3>
-											<span class="item__category">
-												<a href="#">Romance</a>
-												<a href="#">Drama</a>
-												<a href="#">Music</a>
-											</span>
-											<span class="item__rate">6.3</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--carousel">
-										<a href="details1.html" class="item__cover">
-											<img src="public/img/covers/10.png" alt="">
-											<span class="item__play">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-											</span>
-										</a>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details1.html">Savage Beauty</a></h3>
-											<span class="item__category">
-												<a href="#">Comedy</a>
-												<a href="#">Drama</a>
-											</span>
-											<span class="item__rate">7.9</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--carousel">
-										<a href="details1.html" class="item__cover">
-											<img src="public/img/covers/11.png" alt="">
-											<span class="item__play">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-											</span>
-										</a>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details1.html">The Unseen Journey</a></h3>
-											<span class="item__category">
-												<a href="#">Action</a>
-												<a href="#">Triler</a>
-											</span>
-											<span class="item__rate">8.4</span>
-										</div>
-									</div>
-								</li>
-
-								<li class="splide__slide">
-									<div class="item item--carousel">
-										<a href="details1.html" class="item__cover">
-											<img src="public/img/covers/12.png" alt="">
-											<span class="item__play">
-												<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-											</span>
-										</a>
-										<div class="item__content">
-											<h3 class="item__title"><a href="details1.html">Endless Horizon</a></h3>
-											<span class="item__category">
-												<a href="#">Comedy</a>
-											</span>
-											<span class="item__rate">7.1</span>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- end carousel -->
-			</div>
-		</div>
-	</section>
-	<!-- end now watching -->
 
 	<!-- footer -->
 	<footer class="footer">
@@ -1447,19 +1325,19 @@
 
 						<div class="col-6">
 							<ul class="footer__list">
-								<li><a href="catalog1.html">Movies</a></li>
-								<li><a href="catalog1.html">TV Shows</a></li>
-								<li><a href="catalog1.html">Anime</a></li>
-								<li><a href="catalog1.html">Cartoons</a></li>
+								<li><a href="catalog1">Movies</a></li>
+								<li><a href="catalog1">TV Shows</a></li>
+								<li><a href="catalog1">Anime</a></li>
+								<li><a href="catalog1">Cartoons</a></li>
 							</ul>
 						</div>
 
 						<div class="col-6">
 							<ul class="footer__list">
-								<li><a href="catalog1.html">Netflix</a></li>
-								<li><a href="catalog1.html">Marvel</a></li>
-								<li><a href="catalog1.html">DC Comics</a></li>
-								<li><a href="catalog1.html">Book adaptations</a></li>
+								<li><a href="catalog1">Netflix</a></li>
+								<li><a href="catalog1">Marvel</a></li>
+								<li><a href="catalog1">DC Comics</a></li>
+								<li><a href="catalog1">Book adaptations</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1468,20 +1346,20 @@
 				<div class="col-6 order-md-2 col-md-4 col-lg-3 col-xl-2">
 					<h6 class="footer__title">Resources</h6>
 					<ul class="footer__list">
-						<li><a href="about.html">About us</a></li>
-						<li><a href="pricing.html">Pricing plans</a></li>
-						<li><a href="faq.html">Help center</a></li>
-						<li><a href="contacts.html">Contacts</a></li>
+						<li><a href="about">About us</a></li>
+						<li><a href="pricing">Pricing plans</a></li>
+						<li><a href="faq">Help center</a></li>
+						<li><a href="contacts">Contacts</a></li>
 					</ul>
 				</div>
 
 				<div class="col-6 order-md-4 col-md-4 col-lg-3 col-xl-2">
 					<h6 class="footer__title">Help</h6>
 					<ul class="footer__list">
-						<li><a href="privacy.html">Account & Billing</a></li>
-						<li><a href="privacy.html">Plans & Pricing</a></li>
-						<li><a href="privacy.html">Supported devices</a></li>
-						<li><a href="privacy.html">Accessibility</a></li>
+						<li><a href="privacy">Account & Billing</a></li>
+						<li><a href="privacy">Plans & Pricing</a></li>
+						<li><a href="privacy">Supported devices</a></li>
+						<li><a href="privacy">Accessibility</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1493,8 +1371,8 @@
 						<small>© FlixGo, 2018—2023. Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio" target="_blank" rel="noopener">Dmitry Volkov</a>.</small>
 
 						<ul>
-							<li><a href="privacy.html">Privacy policy</a></li>
-							<li><a href="privacy.html">Terms and conditions</a></li>
+							<li><a href="privacy">Privacy policy</a></li>
+							<li><a href="privacy">Terms and conditions</a></li>
 						</ul>
 					</div>
 				</div>

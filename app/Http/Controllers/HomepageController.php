@@ -25,4 +25,12 @@ class HomepageController extends Controller
         return view ('home', $data);
     }
 
+    public function movies(){
+        $data = [
+            'meta' => $this->info_web->info_app(),
+            'genres' => DB::table('genres')->where('status', 'active')->get()
+        ];
+
+        return view ('movies', $data);
+    }
 }
