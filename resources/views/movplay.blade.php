@@ -184,263 +184,112 @@
 	<!-- end mobile menu -->
 
 	<!-- catalog -->
-	<div class="section section--catalog">
-        <div class="filter__content"></div>
+	<section class="section section--details">
+		<!-- details background -->
+		<div class="section__details-bg" data-bg="img/bg/details__bg.jpg"></div>
+		<!-- end details background -->
+
+		<!-- details content -->
 		<div class="container">
 			<div class="row">
-				<!-- item -->
-				<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
-					<div class="item item--list">
-						<a href="{{ route('movplay') }}" class="item__cover">
-							<img src="public/img/covers/1.png" alt="">
-							<span class="item__play">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-							</span>
-						</a>
-
-						<div class="item__content">
-							<h3 class="item__title"><a href="details1.html">The Lost City</a></h3>
-							<span class="item__category">
-								<a href="#">Action</a>
-								<a href="#">Triler</a>
-							</span>
-
-							<div class="item__wrap">
-								<span class="item__rate"> 8.4</span>
-
-								<ul class="item__list">
-									<li>HD</li>
-									<li>16+</li>
-								</ul>
-							</div>
-
-							<div class="item__description">
-								<p>When a renowned archaeologist goes missing, his daughter sets out on a perilous journey to the heart of the Amazon rainforest to find him. Along the way, she discovers a hidden city and a dangerous conspiracy that threatens the very balance of power in the world. With the help of a charming rogue, she must navigate treacherous terrain and outwit powerful enemies to save her father and uncover the secrets of the lost city.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end item -->
-
-				<!-- item -->
-				<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
-					<div class="item item--list">
-						<a href="details1.html" class="item__cover">
-							<img src="public/img/covers/2.png" alt="">
-							<span class="item__play">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-							</span>
-						</a>
-
-						<div class="item__content">
-							<h3 class="item__title"><a href="details1.html">Undercurrents</a></h3>
-							<span class="item__category">
-								<a href="#">Comedy</a>
-							</span>
-
-							<div class="item__wrap">
-								<span class="item__rate"> 7.1</span>
-
-								<ul class="item__list">
-									<li>FHD</li>
-									<li>18+</li>
-								</ul>
-							</div>
-
-							<div class="item__description">
-								<p>A brilliant scientist discovers a way to harness the power of the ocean's currents to create a new, renewable energy source. But when her groundbreaking technology falls into the wrong hands, she must race against time to stop it from being used for evil. Along the way, she must navigate complex political alliances and confront her own past to save the world from disaster.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end item -->
-
-				<!-- item -->
-				<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
-					<div class="item item--list">
-						<a href="details1.html" class="item__cover">
-							<img src="public/img/covers/3.png" alt="">
-							<span class="item__play">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-							</span>
-						</a>
-
-						<div class="item__content">
-							<h3 class="item__title"><a href="details1.html">Redemption Road</a></h3>
-							<span class="item__category">
-								<a href="#">Romance</a>
-								<a href="#">Drama</a>
-								<a href="#">Music</a>
-							</span>
-
-							<div class="item__wrap">
-								<span class="item__rate"> 6.3</span>
-
-								<ul class="item__list">
-									<li>HD</li>
-									<li>12+</li>
-								</ul>
-							</div>
-
-							<div class="item__description">
-								<p>A down-on-his-luck boxer struggles to make ends meet while raising his young son. When an old friend offers him a chance to make some quick cash by fighting in an illegal underground boxing tournament, he sees it as his last shot at redemption. But as the stakes get higher and the fights get more brutal, he must confront his own demons and find the strength to win not just for himself, but for his son.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end item -->
-
-				<!-- item -->
-				<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
-					<div class="item item--list">
-						<a href="details1.html" class="item__cover">
-							<img src="public/img/covers/4.png" alt="">
-							<span class="item__play">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-							</span>
-						</a>
-
-						<div class="item__content">
-							<h3 class="item__title"><a href="details1.html">Tales from the Underworld</a></h3>
-							<span class="item__category">
-								<a href="#">Comedy</a>
-								<a href="#">Drama</a>
-							</span>
-
-							<div class="item__wrap">
-								<span class="item__rate"> 7.9</span>
-
-								<ul class="item__list">
-									<li>HD</li>
-									<li>16+</li>
-								</ul>
-							</div>
-
-							<div class="item__description">
-								<p>When a luxury cruise ship sets sail on its final voyage before retirement, the passengers and crew expect nothing but relaxation and indulgence. But when a mysterious illness spreads through the ship, they find themselves fighting for survival in the middle of the ocean. As tensions rise and resources dwindle, they must confront their own mortality and make impossible choices to stay alive.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end item -->
-
-				<!-- item -->
-				<div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
-					<div class="item item--list">
-						<a href="details1.html" class="item__cover">
-							<img src="public/img/covers/5.png" alt="">
-							<span class="item__play">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-							</span>
-						</a>
-
-						<div class="item__content">
-							<h3 class="item__title"><a href="details1.html">Voices from the Other Side</a></h3>
-							<span class="item__category">
-								<a href="#">Action</a>
-								<a href="#">Triler</a>
-							</span>
-
-							<div class="item__wrap">
-								<span class="item__rate"> 8.4</span>
-
-								<ul class="item__list">
-									<li>HD</li>
-									<li>12+</li>
-								</ul>
-							</div>
-
-							<div class="item__description">
-								<p>In a world where magic is outlawed and hunted, a young witch must use her powers to fight back against the corrupt authorities who seek to destroy her kind. With the help of a rogue witch hunter, she sets out on a dangerous mission to uncover the truth about the government's dark secrets and restore balance to the world. But as the stakes get higher and the risks get greater, she must confront her own fears and decide what she's willing to sacrifice for the greater good.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end item -->
-
-
-				<!-- item -->
-				<div class="col-6 col-sm-12 col-lg-6 col-xxl-4 pb-5">
-					<div class="item item--list">
-						<a href="details1.html" class="item__cover">
-							<img src="public/img/covers/6.png" alt="">
-							<span class="item__play">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.54,9,8.88,3.46a3.42,3.42,0,0,0-5.13,3V17.58A3.42,3.42,0,0,0,7.17,21a3.43,3.43,0,0,0,1.71-.46L18.54,15a3.42,3.42,0,0,0,0-5.92Zm-1,4.19L7.88,18.81a1.44,1.44,0,0,1-1.42,0,1.42,1.42,0,0,1-.71-1.23V6.42a1.42,1.42,0,0,1,.71-1.23A1.51,1.51,0,0,1,7.17,5a1.54,1.54,0,0,1,.71.19l9.66,5.58a1.42,1.42,0,0,1,0,2.46Z"/></svg>
-							</span>
-						</a>
-
-						<div class="item__content">
-							<h3 class="item__title"><a href="details1.html">The Unseen World</a></h3>
-							<span class="item__category">
-								<a href="#">Comedy</a>
-							</span>
-
-							<div class="item__wrap">
-								<span class="item__rate"> 7.1</span>
-
-								<ul class="item__list">
-									<li>HD</li>
-									<li>16+</li>
-								</ul>
-							</div>
-
-							<div class="item__description">
-								<p>When a brilliant scientist invents a machine that can access parallel universes, she unwittingly unleashes a dangerous force that threatens to destroy everything she holds dear. With the help of her trusted colleagues, she must race against time to stop the machine from falling into the wrong hands and prevent a catastrophic chain reaction that could unravel the fabric of reality itself. But as she delves deeper into the unseen world, she realizes that the greatest danger may be closer than she ever imagined.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- end item -->
-			</div>
-
-			<div class="row">
-				<!-- paginator -->
+				<!-- title -->
 				<div class="col-12">
-					<div class="section__paginator">
-						<!-- amount -->
-						<span class="section__paginator-pages">Showing 6 of 169</span>
-						<!-- end amount -->
+					<h1 class="section__title section__title--head">I Dream in Another Language</h1>
+				</div>
+				<!-- end title -->
 
-						<ul class="section__paginator-list">
-							<li>
-								<a href="#">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17,11H9.41l3.3-3.29a1,1,0,1,0-1.42-1.42l-5,5a1,1,0,0,0-.21.33,1,1,0,0,0,0,.76,1,1,0,0,0,.21.33l5,5a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L9.41,13H17a1,1,0,0,0,0-2Z"/></svg>
-									<span>Prev</span>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<span>Next</span>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z"/></svg>
-								</a>
-							</li>
-						</ul>
+				<!-- content -->
+				<div class="col-12 col-xl-6">
+					<div class="item item--details">
+						<!-- card cover -->
+						<div class="item__cover">
+							<img src="img/covers/14.png" alt="">
+						</div>
+						<!-- end card cover -->
 
-						<ul class="paginator">
-							<li class="paginator__item paginator__item--prev">
-								<a href="#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
-                                        <path d="M8.5,12.8l5.7,5.6c0.4,0.4,1,0.4,1.4,0c0,0,0,0,0,0c0.4-0.4,0.4-1,0-1.4l-4.9-5l4.9-5c0.4-0.4,0.4-1,0-1.4c-0.2-0.2-0.4-0.3-0.7-0.3c-0.3,0-0.5,0.1-0.7,0.3l-5.7,5.6C8.1,11.7,8.1,12.3,8.5,12.8C8.5,12.7,8.5,12.7,8.5,12.8z"/>
-                                    </svg>
-                                </a>
-							</li>
-							<li class="paginator__item paginator__item--active"><a href="#">1</a></li>
-							<li class="paginator__item"><a href="#">2</a></li>
-							<li class="paginator__item"><a href="#">3</a></li>
-							<li class="paginator__item"><a href="#">4</a></li>
-							<li class="paginator__item"><span>...</span></li>
-							<li class="paginator__item"><a href="#">29</a></li>
-							<li class="paginator__item"><a href="#">30</a></li>
-							<li class="paginator__item paginator__item--next">
-								<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.54,11.29,9.88,5.64a1,1,0,0,0-1.42,0,1,1,0,0,0,0,1.41l4.95,5L8.46,17a1,1,0,0,0,0,1.41,1,1,0,0,0,.71.3,1,1,0,0,0,.71-.3l5.66-5.65A1,1,0,0,0,15.54,11.29Z"/></svg></a>
-							</li>
-						</ul>
+						<!-- card content -->
+						<div class="item__content">
+							<div class="item__wrap">
+								<span class="item__rate">8.4</span>
+
+								<ul class="item__list">
+									<li>Full HD</li>
+									<li>16+</li>
+								</ul>
+							</div>
+
+							<ul class="item__meta">
+								<li><span>Genre:</span> <a href="#">Action</a> <a href="#">Triler</a></li>
+								<li><span>Running time:</span> 120 min</li>
+								<li><span>Country:</span> <a href="#">USA</a></li>
+								<li><span>Premiere:</span> 05.02.2023</li>
+							</ul>
+
+							<ul class="item__meta item__meta--second">
+								<li><span>Director:</span> <a href="actor.html">Louis Leterrier</a></li>
+								<li><span>Actors:</span> <a href="actor.html">Son Gun</a> <a href="actor.html">Michelle Rodriguez</a> <a href="actor.html">Jordana Brewster</a> <a href="actor.html">Tyreese Gibson</a> <a href="actor.html">Charlize Theron</a></li>
+							</ul>
+						</div>
+
+						<div class="item__description item__description--details item__description--tvseries">
+							<p>When a renowned archaeologist goes missing, his daughter sets out on a perilous journey to the heart of the Amazon rainforest to find him. Along the way, she discovers a hidden city and a dangerous conspiracy that threatens the very balance of power in the world. With the help of a charming rogue, she must navigate treacherous terrain and outwit powerful enemies to save her father and uncover the secrets of the lost city. A down-on-his-luck boxer struggles to make ends meet while raising his young son. When an old friend offers him a chance to make some quick cash by fighting in an illegal underground boxing tournament, he sees it as his last shot at redemption. But as the stakes get higher and the fights get more brutal, he must confront his own demons and find the strength to win not just for himself, but for his son.</p>
+							<p>A brilliant scientist discovers a way to harness the power of the ocean's currents to create a new, renewable energy source. But when her groundbreaking technology falls into the wrong hands, she must race against time to stop it from being used for evil. Along the way, she must navigate complex political alliances and confront her own past to save the world from disaster.</p>
+						</div>
+						<!-- end card content -->
 					</div>
 				</div>
-				<!-- end paginator -->
+				<!-- end content -->
+
+				<!-- player -->
+				<div class="col-12 col-xl-6">
+					<video controls crossorigin playsinline poster="../../cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" id="player">
+						<!-- Video files -->
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" size="576">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-720p.mp4" type="video/mp4" size="720">
+						<source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4" size="1080">
+
+						<!-- Caption files -->
+						<track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt" default>
+						<track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+					</video>
+
+					<div class="section__item-filter">
+						<select class="section__item-select" name="season" id="filter__season">
+							<option value="0">Season 1</option>
+							<option value="1">Season 2</option>
+							<option value="2">Season 3</option>
+							<option value="3">Season 4</option>
+							<option value="4">Season 5</option>
+						</select>
+
+						<select class="section__item-select" name="series" id="filter__series">
+							<option value="0">Series 1</option>
+							<option value="1">Series 2</option>
+							<option value="2">Series 3</option>
+							<option value="3">Series 4</option>
+							<option value="4">Series 5</option>
+							<option value="5">Series 6</option>
+							<option value="6">Series 7</option>
+							<option value="7">Series 8</option>
+							<option value="8">Series 9</option>
+							<option value="9">Series 10</option>
+							<option value="10">Series 11</option>
+							<option value="11">Series 12</option>
+						</select>
+
+						<select class="section__item-select" name="sync" id="filter__sync">
+							<option value="0">Eng.Original</option>
+							<option value="1">NewStudio</option>
+							<option value="2">LostFilm</option>
+							<option value="3">FlixGo</option>
+						</select>
+					</div>
+				</div>
+				<!-- end player -->
 			</div>
 		</div>
-	</div>
+		<!-- end details content -->
+	</section>
 	<!-- end catalog -->
 
 	<!-- footer -->
