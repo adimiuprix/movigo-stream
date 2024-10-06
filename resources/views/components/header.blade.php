@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="header__content">
                     <!-- header logo -->
-                    <a href="" class="header__logo">
+                    <a href="{{ route('home') }}" class="header__logo">
                         <img src="{{ asset('public/img/logo.svg') }}" alt="">
                     </a>
                     <!-- end header logo -->

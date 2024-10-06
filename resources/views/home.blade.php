@@ -75,6 +75,7 @@
 								</li>
 							</ul>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -97,15 +98,12 @@
 							<li class="nav-item" role="presentation">
 								<button id="1-tab" class="active" data-bs-toggle="tab" data-bs-target="#tab-1" type="button" role="tab" aria-controls="tab-1" aria-selected="true">New items</button>
 							</li>
-
 							<li class="nav-item" role="presentation">
 								<button id="2-tab" data-bs-toggle="tab" data-bs-target="#tab-2" type="button" role="tab" aria-controls="tab-2" aria-selected="false">Movies</button>
 							</li>
-
 							<li class="nav-item" role="presentation">
 								<button id="3-tab" data-bs-toggle="tab" data-bs-target="#tab-3" type="button" role="tab" aria-controls="tab-3" aria-selected="false">TV Shows</button>
 							</li>
-
 							<li class="nav-item" role="presentation">
 								<button id="4-tab" data-bs-toggle="tab" data-bs-target="#tab-4" type="button" role="tab" aria-controls="tab-4" aria-selected="false">Anime</button>
 							</li>
@@ -1108,4 +1106,5 @@
 		</div>
 	</section>
 	<!-- end content -->
+
 </x-layout>
