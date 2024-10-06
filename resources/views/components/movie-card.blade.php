@@ -1,9 +1,9 @@
-@props(['title' ,'star', 'syn'])
+@props(['title', 'segmen','cover','star', 'syn'])
 
 <div class="col-6 col-sm-12 col-lg-6 col-xxl-4">
     <div class="item item--list">
-        <a href="{{ route(name: 'movplay') }}" class="item__cover">
-            <img src="public/img/covers/1.png" alt="image"/>
+        <a href="{{ route('movplay', ['slug' => $segmen]) }}" class="item__cover">
+        <img src="{{ asset('public/img/covers/' . $cover) }}" alt="image"/>
             <span class="item__play">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path
@@ -14,7 +14,7 @@
 
         <div class="item__content">
             <h3 class="item__title">
-                <a href="{{ route(name: 'movplay') }}">{{ $title }}</a>
+                <a href="{{ route('movplay', ['detail' => $segmen]) }}">{{ $title }}</a>
             </h3>
             <span class="item__category">
                 <a href="#">Action</a>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use App\Models\Movie;
+use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
@@ -34,9 +35,12 @@ class HomepageController extends Controller
         return view ('movies', $data);
     }
 
-    public function movplay()
+    public function movplay(Request $request)
     {
+        $slug = $request->query('detail');
+
         $data = [
+            'mv' => (new Movie())->where(column: 'slug', operator: $slug)->first(),
             'genres' => DB::table('genres')->where('status', 'active')->get()
         ];
 

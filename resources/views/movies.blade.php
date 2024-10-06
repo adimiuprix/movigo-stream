@@ -8,6 +8,8 @@
 				@foreach ($movies as $movie)
 				<x-movie-card
 					:title="$movie['title']"
+					:segmen="$movie['slug']"
+					:cover="$movie['cover_img']"
 					:star="$movie['star']"
 					:syn="$movie['synopsis']"
 				></x-movie-card>
